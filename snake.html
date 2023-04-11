@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="snake.css" />
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="overlay-content">
+        <h1 class="lobby-title">SNAKE GAME</h1>
+        <input class="username" type="text" placeholder="Nickname" />
+        <button type="button" disabled class="btn-start">Play</button>
+      </div>
+    </div>
+
+    <aside class="score-time">
+      <h1 class="nick">Yourname : <span class="name">test</span></h1>
+      <p class="score">Score : <span> 0</span></p>
+      <p class="high-score">High Score : <span> 0</span></p>
+      <p class="timer">
+        Time : <span class="minutes">00</span>:<span class="seconds">00</span>
+      </p>
+    </aside>
+
+    <div class="box-model">
+      <div class="content">
+        <div class="text-content">
+          <h2 class="lose-title">You Lose</h2>
+          <p class="lose-desc" style="font-size: 18px">
+            Do you wanna try again?
+          </p>
+        </div>
+
+        <div class="btn-lose">
+          <!-- <button type="button" class="try-again">Yes, try again</button> -->
+          <button type="button" class="exit-btn">Yes, try again</button>
+          <button type="button" class="rewind-btn">Rewind</button>
+        </div>
+      </div>
+    </div>
+    <canvas width="960" height="600"></canvas>
+    <script src="snake.js"></script>
+  </body>
+</html>
